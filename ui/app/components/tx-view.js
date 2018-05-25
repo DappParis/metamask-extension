@@ -79,13 +79,13 @@ TxView.prototype.renderButtons = function () {
   return !selectedToken
     ? (
       h('div.flex-row.flex-center.hero-balance-buttons', [
-        h('button.btn-primary.hero-balance-button', {
+        h('button.j52.j169.j175.j176.j219', {
           onClick: () => showModal({
             name: 'DEPOSIT_ETHER',
           }),
         }, this.context.t('deposit')),
 
-        h('button.btn-primary.hero-balance-button', {
+        h('button.j52.j169.j175.j176.j219', {
           style: {
             marginLeft: '0.8em',
           },

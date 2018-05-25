@@ -933,6 +933,9 @@
   "welcomeBack": {
     "message": "Welcome Back!"
   },
+  "welcomeAniket": {
+    "message": "Welcome Back, Mr. Aniket!"
+  },
   "welcomeBeta": {
     "message": "Welcome to MetaMask Beta"
   },

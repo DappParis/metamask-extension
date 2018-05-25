@@ -45,7 +45,7 @@ class WelcomeScreen extends Component {
             height: '225',
           }),
 
-          h('div.welcome-screen__info__header', 'Welcome to MetaMask Beta'),
+          h('div.welcome-screen__info__header', 'Welcome to MetaMask Aniket'),
 
           h('div.welcome-screen__info__copy', 'MetaMask is a secure identity vault for Ethereum.'),
 
