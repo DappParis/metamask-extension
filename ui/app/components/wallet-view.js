@@ -182,12 +182,18 @@ WalletView.prototype.render = function () {
 
     h(TokenList),
 
-    h('button.btn-primary.wallet-view__add-token-button', {
-      onClick: () => {
-        history.push(ADD_TOKEN_ROUTE)
-        sidebarOpen && hideSidebar()
-      },
-    }, this.context.t('addToken')),
+    h(Tooltip, {
+      position: 'top',
+      title: this.context.t('addNewErc20Token'),
+      wrapperClassName: 'wallet-view__tooltip',
+    }, [    
+      h('button.wallet-view__add-token-button.j52.j169.j175.j176.j219', {
+        onClick: () => {
+          history.push(ADD_TOKEN_ROUTE)
+          sidebarOpen && hideSidebar()
+        },
+      }, this.context.t('addToken')),
+    ])
   ])
 }
 
@@ -199,4 +205,4 @@ WalletView.prototype.render = function () {
 //         style: {},
 //       }),
 //     ]),
-// ])
+// ]).

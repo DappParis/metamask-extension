@@ -4,7 +4,7 @@ const h = require('react-hyperscript')
 const connect = require('react-redux').connect
 const classnames = require('classnames')
 const inherits = require('util').inherits
-const NetworkDropdownIcon = require('./dropdowns/components/network-dropdown-icon')
+const NetworkDropdownIcon = require('./dropdowns/components/network-dropdown-icon');
 
 Network.contextTypes = {
   t: PropTypes.func,

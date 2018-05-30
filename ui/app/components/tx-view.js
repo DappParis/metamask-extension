@@ -75,7 +75,6 @@ TxView.prototype.renderHeroBalance = function () {
 
 TxView.prototype.renderButtons = function () {
   const {selectedToken, showModal, history } = this.props
-
   return !selectedToken
     ? (
       h('div.flex-row.flex-center.hero-balance-buttons', [
@@ -95,7 +94,7 @@ TxView.prototype.renderButtons = function () {
     )
     : (
       h('div.flex-row.flex-center.hero-balance-buttons', [
-        h('button.btn-primary.hero-balance-button', {
+        h('button.j52.j169.j175.j176.j219', {
           onClick: () => history.push(SEND_ROUTE),
         }, this.context.t('send')),
       ])

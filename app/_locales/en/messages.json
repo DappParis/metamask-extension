@@ -146,6 +146,9 @@
   "copyToClipboard": {
     "message": "Copy to clipboard"
   },
+  "addNewErc20Token": {
+    "message": "Add New ERC20 Token"
+  },
   "copyButton": {
     "message": " Copy "
   },
@@ -363,6 +366,9 @@
   },
   "hideToken": {
     "message": "Hide Token"
+  },
+  "sendToken": {
+    "message": "Send Token"
   },
   "hideTokenPrompt": {
     "message": "Hide Token?"
