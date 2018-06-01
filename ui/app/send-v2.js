@@ -499,18 +499,18 @@ SendTransactionScreen.prototype.renderFooter = function () {
 
   return h('div.page-container__footer', [
     h(Button, {
-      type: 'secondary',
-      large: true,
-      className: 'page-container__footer-button',
+      type: 'j169',
+      large: false,
+      className: 'j175',
       onClick: () => {
         clearSend()
         history.push(DEFAULT_ROUTE)
       },
     }, this.context.t('cancel')),
     h(Button, {
-      type: 'primary',
-      large: true,
-      className: 'page-container__footer-button',
+      type: 'j169',
+      large: false,
+      className: 'j176.u-margin-left',
       disabled: !noErrors || !gasTotal || missingTokenBalance,
       onClick: event => this.onSubmit(event),
     }, this.context.t('next')),
