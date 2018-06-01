@@ -133,12 +133,17 @@ WalletView.prototype.render = function () {
 
       h('div.wallet-view__keyring-label.allcaps', isLoose ? this.context.t('imported') : ''),
 
+      h(Tooltip, {
+        position: 'top',
+        title: this.context.t('viewAccountDetails'),
+        wrapperClassName: 'wallet-view__tooltip',
+      }, [
       h('div.flex-column.flex-center.wallet-view__name-container', {
         style: { margin: '0 auto' },
         onClick: showAccountDetailModal,
       }, [
         h(Identicon, {
-          diameter: 54,
+          diameter: 75,
           address: checksummedAddress,
         }),
 
@@ -148,9 +153,10 @@ WalletView.prototype.render = function () {
           selectedIdentity.name,
         ]),
 
-        h('button.btn-clear.wallet-view__details-button.allcaps', this.context.t('details')),
+      /*  h('button.btn-clear.wallet-view__details-button.allcaps', this.context.t('details')),*/
       ]),
     ]),
+  ]),
 
     h(Tooltip, {
       position: 'bottom',

@@ -95,11 +95,13 @@ $wallet-view-bg: $alabaster;
   }
 
   &__details-button {
-    font-size: 10px;
-    border-radius: 17px;
+    /*font-size: 10px 0.875rem*/
+    font-size: 0.875rem;
+    /*border-radius: 4px;1px solid rgba(0, 0, 0, 0.23)*/
+    border-radius: 1px solid rgba(0, 0, 0, 0.23);
     background-color: transparent;
     margin: 0 auto;
-    padding: 4px 12px;
+    padding: 8px 16px;
     flex: 0 0 auto;
   }
 
@@ -107,7 +109,7 @@ $wallet-view-bg: $alabaster;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 24px;
+    padding: 8px;
   }
 
   &__address {
@@ -142,13 +144,14 @@ $wallet-view-bg: $alabaster;
 
   &__add-token-button {
     flex: 0 0 auto;
-    margin: 20px auto;
+    margin: 0px auto;
     /*background: none;*/
     padding: .7rem 2rem;
     transition: border-color .3s ease;
 
     &:hover {
-      border-color: $curious-blue;
+     border-color: $curious-blue;
+      
     }
   }
 }
@@ -262,10 +265,10 @@ $wallet-view-bg: $alabaster;
 
 // wallet view
 .account-name {
-  font-size: 24px;
+  font-size: 25px;
   color: $black;
   margin-top: 8px;
-  margin-bottom: .9rem;
+  /*margin-bottom: .9rem;*/
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;

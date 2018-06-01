@@ -149,6 +149,9 @@
   "addNewErc20Token": {
     "message": "Add New ERC20 Token"
   },
+  "viewAccountDetails":{
+    "message": "View Account Details"
+  },
   "copyButton": {
     "message": " Copy "
   },
