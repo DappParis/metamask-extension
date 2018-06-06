@@ -47,7 +47,7 @@ class EditableLabel extends Component {
         className: classnames({ 'editable-label__input--error': value === '' }),
       }),
       h('div.editable-label__icon-wrapper', [
-        h('i.fa.fa-check.editable-label__icon', {
+        h('i.fa.fa-check.editable-label__icon.check-margin', {
           onClick: () => this.handleSubmit(),
         }),
       ]),

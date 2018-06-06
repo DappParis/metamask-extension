@@ -374,8 +374,12 @@ button.btn-thin {
 }
 
 .account-btn{
-      margin-bottom: 15px;
-      width: 250px;
+    margin-bottom: 15px;
+    width: 250px;
+}
+
+.account-btn:not(::last-child){
+  margin-bottom: 15px;
 }
 
 .width-btn{

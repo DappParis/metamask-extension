@@ -68,12 +68,12 @@ AccountDetailsModal.prototype.render = function () {
 
       h('div.account-modal-divider'),
 
-      h('button.j169.j176.account-btn', {
+      h('button.j169.j175.j176.account-btn', {
         onClick: () => global.platform.openWindow({ url: genAccountLink(address, network) }),
       }, this.context.t('etherscanView')),
 
       // Holding on redesign for Export Private Key functionality
-      h('button.j169.j176.account-btn', {
+      h('button.j169.j175.j176.account-btn', {
         onClick: () => showExportPrivateKeyModal(),
       }, this.context.t('exportPrivateKey')),
 

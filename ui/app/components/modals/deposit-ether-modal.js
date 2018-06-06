@@ -109,7 +109,7 @@ DepositEtherModal.prototype.renderRow = function ({
       ]),
 
       !hideButton && h('div.deposit-ether-modal__buy-row__button', [
-        h('button.j169.j176.width-btn', {
+        h('button.j169.j175.j176.width-btn', {
           onClick: onButtonClick,
         }, [buttonLabel]),
       ]),
