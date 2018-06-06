@@ -16,6 +16,7 @@ const BalanceComponent = require('./balance-component')
 const TokenList = require('./token-list')
 const selectors = require('../selectors')
 const { ADD_TOKEN_ROUTE } = require('../routes')
+const EditableLabel = require('./editable-label')
 
 module.exports = compose(
   withRouter,
@@ -51,6 +52,7 @@ function mapDispatchToProps (dispatch) {
       dispatch(actions.showModal({ name: 'ACCOUNT_DETAILS' }))
     },
     showAddTokenPage: () => dispatch(actions.showAddTokenPage()),
+    saveAccountLabel: (address, label) => dispatch(actions.saveAccountLabel(address, label)),
   }
 }
 
@@ -102,10 +104,13 @@ WalletView.prototype.render = function () {
     selectedIdentity,
     keyrings,
     showAccountDetailModal,
+    saveAccountLabel,
     sidebarOpen,
     hideSidebar,
     history,
   } = this.props
+
+  const { name, address } = selectedIdentity
   // temporary logs + fake extra wallets
   // console.log('walletview, selectedAccount:', selectedAccount)
 
@@ -146,16 +151,26 @@ WalletView.prototype.render = function () {
           diameter: 75,
           address: checksummedAddress,
         }),
-
-        h('span.account-name', {
-          style: {},
-        }, [
-          selectedIdentity.name,
-        ]),
-
-      /*  h('button.btn-clear.wallet-view__details-button.allcaps', this.context.t('details')),*/
       ]),
     ]),
+    h('div.flex-column.flex-center', {
+      style: { margin: '0 auto' },
+    }, [
+      h(EditableLabel, {
+        className: 'account-modal__name',
+        defaultValue: name,
+        onSubmit: label => saveAccountLabel(address, label),
+      }),
+    ]),
+        // h('span.account-name', {
+        //   style: {},
+        // }, [
+        //   selectedIdentity.name,
+        // ]),
+
+      /*  h('button.btn-clear.wallet-view__details-button.allcaps', this.context.t('details')),*/
+      
+    
   ]),
 
     h(Tooltip, {
