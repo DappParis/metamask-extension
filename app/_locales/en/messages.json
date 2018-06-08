@@ -900,7 +900,7 @@
     "message": "Unknown network ID"
   },
   "unlockMessage": {
-    "message": "The decentralized web awaits"
+    "message": "You need to dApp's it!"
   },
   "uriErrorMsg": {
     "message": "URIs require the appropriate HTTP/HTTPS prefix."

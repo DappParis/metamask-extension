@@ -75,12 +75,12 @@ class UnlockPage extends Component {
   renderSubmitButton () {
     const style = {
       backgroundColor: 'rgba(151, 164, 165, 1)',
-      color: 'white',
+      color: 'black',
       marginTop: '20px',
       height: '60px',
       fontWeight: '400',
-      boxShadow: 'none',
-      borderRadius: '4px',
+      boxShadow: '3px 3px 12px #999',
+      borderRadius: '45px',
     }
 
     return (
@@ -150,7 +150,7 @@ class UnlockPage extends Component {
             >
               { this.context.t('restoreFromSeed') }
             </div>
-          
+
           </div>
         </div>
       </div>
