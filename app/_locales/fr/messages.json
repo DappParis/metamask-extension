@@ -78,7 +78,7 @@
     "message": "Confirmer le contrat"
   },
   "confirmPassword": {
-    "message": "Confirmer le mot de passe"
+    "message": "Une petite confirmation ?"
   },
   "confirmTransaction": {
     "message": "Confirmer la transaction"
@@ -378,7 +378,7 @@
     "message": "Nouveau contrat"
   },
   "newPassword": {
-    "message": "Nouveau mot de passe (min 8 caractères)"
+    "message": "Nouveau mot de passe Metablock"
   },
   "newRecipient": {
     "message": "Nouveau destinataire"

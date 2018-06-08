@@ -947,6 +947,12 @@ textarea:focus {
     #app-content {
       background-color: #fff; } }
 
+.welcome-screen__info__headerr{
+  font-weight: bold;
+  color: blue;
+}
+
+
 /* stylelint-enable */
 a {
   text-decoration: none;
