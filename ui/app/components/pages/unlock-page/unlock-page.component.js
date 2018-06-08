@@ -150,19 +150,7 @@ class UnlockPage extends Component {
             >
               { this.context.t('restoreFromSeed') }
             </div>
-            <div
-              className="unlock-page__link unlock-page__link--import"
-              onClick={() => {
-                this.props.markPasswordForgotten()
-                this.props.history.push(RESTORE_VAULT_ROUTE)
-
-                if (getEnvironmentType(window.location.href) === ENVIRONMENT_TYPE_POPUP) {
-                  global.platform.openExtensionInBrowser()
-                }
-              }}
-            >
-              { this.context.t('importUsingSeed') }
-            </div>
+          
           </div>
         </div>
       </div>
