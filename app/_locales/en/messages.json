@@ -900,7 +900,7 @@
     "message": "Unknown network ID"
   },
   "unlockMessage": {
-    "message": "You need to dApp's it!"
+    "message": "Welcome Back !"
   },
   "uriErrorMsg": {
     "message": "URIs require the appropriate HTTP/HTTPS prefix."
@@ -931,7 +931,7 @@
     "message": "Warning"
   },
   "welcomeBack": {
-    "message": "Welcome Back!"
+    "message": "Ready To dApps' It?"
   },
   "welcomeBeta": {
     "message": "Welcome to Metablock Beta"
