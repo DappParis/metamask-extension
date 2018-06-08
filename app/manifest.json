@@ -1,10 +1,10 @@
 {
-  "name": "__MSG_appName__",
-  "short_name": "__MSG_appName__",
-  "version": "4.6.0",
+  "name": "Metablock",
+  "short_name": "Metablock",
+  "version": "1.0.0",
   "manifest_version": 2,
-  "author": "https://metamask.io",
-  "description": "__MSG_appDescription__",
+  "author": "https://dapp.paris",
+  "description": "Dapp.paris add-on",
   "commands": {
     "_execute_browser_action": {
       "suggested_key": {
@@ -16,8 +16,8 @@
     }
   },
   "icons": {
-    "16": "images/icon-16.png",
-    "128": "images/icon-128.png"
+    "16": "images/MetablockHead.png",
+    "128": "images/MetablockHead.png"
   },
   "applications": {
     "gecko": {
@@ -34,10 +34,10 @@
   },
   "browser_action": {
     "default_icon": {
-      "19": "images/icon-19.png",
-      "38": "images/icon-38.png"
+      "19": "images/MetablockHead.png",
+      "38": "images/MetablockHead.png"
     },
-    "default_title": "MetaMask",
+    "default_title": "Metablock",
     "default_popup": "popup.html"
   },
   "content_scripts": [

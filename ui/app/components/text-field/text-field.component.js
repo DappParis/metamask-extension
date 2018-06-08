@@ -17,7 +17,7 @@ const styles = {
   cssFocused: {},
   cssUnderline: {
     '&:after': {
-      backgroundColor: '#f7861c',
+      backgroundColor: '#6699ff',
     },
   },
   cssError: {},
