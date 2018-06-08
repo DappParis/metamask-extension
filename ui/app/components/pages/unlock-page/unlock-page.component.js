@@ -74,7 +74,7 @@ class UnlockPage extends Component {
 
   renderSubmitButton () {
     const style = {
-      backgroundColor: '#f7861c',
+      backgroundColor: 'rgba(151, 164, 165, 1)',
       color: 'white',
       marginTop: '20px',
       height: '60px',
@@ -106,11 +106,14 @@ class UnlockPage extends Component {
       <div className="unlock-page__container">
         <div className="unlock-page">
           <div className="unlock-page__mascot-container">
-            <Mascot
-              animationEventEmitter={this.animationEventEmitter}
-              width="120"
-              height="120"
+
+            <img
+              className="app-header__metaElephant"
+              src="/images/Metablock Portrait.png"
+              height="200"
+              width="200"
             />
+
           </div>
           <h1 className="unlock-page__title">
             { this.context.t('welcomeBack') }

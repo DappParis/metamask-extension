@@ -53,7 +53,7 @@ class WelcomeScreen extends Component {
           />,
 
 
-          h('div.welcome-screen__info__headerr', 'Welcome to Metablock Beta !'),
+          h('div.welcome-screen__info__headerr', 'Welcome aboard with us !'),
 
           h('div.welcome-screen__info__copy', 'Metablock is a secure identity bridge for Ethereum.'),
 
