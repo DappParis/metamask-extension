@@ -48,12 +48,12 @@ class WelcomeScreen extends Component {
           <img
             className="app-header__metaElephant"
             src="/images/Metablock Portrait.png"
-            height={500}
-            width={500}
+            height={300}
+            width={300}
           />,
 
 
-          h('div.welcome-screen__info__headerr', 'Welcome aboard with us !'),
+          h('div.welcome-screen__info__headerr', 'Welcome aboard with Metablock !'),
 
           h('div.welcome-screen__info__copy', 'Metablock is a secure identity bridge for Ethereum.'),
 
