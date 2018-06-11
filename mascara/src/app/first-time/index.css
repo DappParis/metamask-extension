@@ -20,7 +20,7 @@
 .alpha-warning__container {
   display: flex;
   justify-content: center;
-  background: white;
+  background: #f7861c;
   flex: 0 0 auto;
 }
 
@@ -686,7 +686,7 @@ button.backup-phrase__confirm-seed-option:hover {
   height: 54px;
   width: 198px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.14);
-  color: black;
+  color: #FFFFFF;
   font-size: 20px;
   font-weight: 500;
   font-family: Roboto;
@@ -695,7 +695,7 @@ button.backup-phrase__confirm-seed-option:hover {
   text-transform: uppercase;
   margin: 35px 0 14px;
   transition: 200ms ease-in-out;
-  background-color: rgba(151, 164, 165, 1);
+  background-color: rgba(247, 134, 28, 0.9);
 }
 
 button.first-time-flow__button[disabled] {
@@ -704,7 +704,7 @@ button.first-time-flow__button[disabled] {
 
 button.first-time-flow__button:hover {
   transform: scale(1);
-  background-color: white;
+  background-color: rgba(247, 134, 28, 0.9);
 }
 
 .first-time-flow__button--tertiary {

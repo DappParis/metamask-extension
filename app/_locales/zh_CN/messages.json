@@ -483,10 +483,10 @@
     "message": "消息"
   },
   "metamaskDescription": {
-    "message": "Metablock is a secure identity vault for Ethereum."
+    "message": "MetaMask is a secure identity vault for Ethereum."
   },
   "metamaskSeedWords": {
-    "message": "Metablock 助记词"
+    "message": "MetaMask 助记词"
   },
   "min": {
     "message": "最小"

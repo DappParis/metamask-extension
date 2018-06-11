@@ -54,6 +54,7 @@ class FirstTimeFlow extends Component {
             'alpha-warning-welcome-screen': !welcomeScreenSeen,
           })}
         >
+          Please be aware that this version is still under development
         </h2>
       </div>
     )

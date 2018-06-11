@@ -21,6 +21,163 @@
   outline: none;
 }
 
+/******************************Material Buttons*******************************************/
+
+.j169 {
+  color: rgba(0, 0, 0, 0.87);
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  min-width: 88px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  min-height: 36px;
+  box-sizing: border-box;
+  line-height: 1.4em;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+.j169:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.j169.j179 {
+  color: rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .j169:hover {
+    background-color: transparent;
+  }
+}
+.j169:hover.j179 {
+  background-color: transparent;
+}
+.j170 {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.j171 {
+  color: #2196f3;
+}
+.j171:hover {
+  background-color: rgba(33, 150, 243, 0.08);
+}
+@media (hover: none) {
+  .j171:hover {
+    background-color: transparent;
+  }
+}
+.j172 {
+  color: rgb(225, 0, 80);
+}
+.j172:hover {
+  background-color: rgba(225, 0, 80, 0.08);
+}
+@media (hover: none) {
+  .j172:hover {
+    background-color: transparent;
+  }
+}
+.j173 {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+}
+.j174 {
+  color: inherit;
+}
+
+// light btn
+.j175 {
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),0px 2px 2px 0px rgba(0, 0, 0, 0.14),0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  background-color: #e0e0e0;
+}
+.j175.j178 {
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),0px 6px 10px 0px rgba(0, 0, 0, 0.14),0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+.j175:active {
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),0px 8px 10px 1px rgba(0, 0, 0, 0.14),0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+.j175.j179 {
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.j175:hover {
+  background-color: #d5d5d5;
+}
+@media (hover: none) {
+  .j175:hover {
+    background-color: #e0e0e0;
+  }
+}
+.j175:hover.j179 {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.j176 {
+  color: #fff;
+  background-color: #2196f3;
+}
+.j176:hover {
+  background-color: #1976d2;
+}
+@media (hover: none) {
+  .j176:hover {
+    background-color: #2196f3;
+  }
+}
+.j177 {
+  color: #fff;
+  background-color: rgb(225, 0, 80);
+}
+.j177:hover {
+  background-color: rgb(157, 0, 56);
+}
+@media (hover: none) {
+  .j177:hover {
+    background-color: rgb(225, 0, 80);
+  }
+}
+
+// Round btn class
+.j180 {
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  min-width: 0;
+  font-size: 24px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),0px 6px 10px 0px rgba(0, 0, 0, 0.14),0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+}
+.j180:active {
+  box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2),0px 12px 17px 2px rgba(0, 0, 0, 0.14),0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+}
+.j181 {
+  width: 40px;
+  height: 40px;
+}
+.j182 {
+  padding: 7px 8px;
+  min-width: 64px;
+  font-size: 0.8125rem;
+  min-height: 32px;
+}
+.j183 {
+  padding: 8px 24px;
+  min-width: 112px;
+  font-size: 0.9375rem;
+  min-height: 40px;
+}
+.j184 {
+  width: 100%;
+}
+
+
+
+/***************************************************************************/
+
 .btn-primary,
 .btn-primary--lg {
   color: $curious-blue;
@@ -81,7 +238,8 @@
   background: $white;
   text-align: center;
   padding: .8rem 1rem;
-  color: $curious-blue;
+  /*color: $curious-blue;#2196f3*/
+  color: #2196f3;
   border: 2px solid $spindle;
   border-radius: 4px;
   font-size: .85rem;
@@ -208,4 +366,22 @@ button.btn-thin {
   font-size: 16px;
   line-height: 24px;
   padding: 16px 42px;
+}
+
+
+.u-margin-left{
+    margin-left: 20px;
+}
+
+.account-btn{
+    margin-bottom: 15px;
+    width: 250px;
+}
+
+.account-btn:not(::last-child){
+  margin-bottom: 15px;
+}
+
+.width-btn{
+  width: 250px;
 }

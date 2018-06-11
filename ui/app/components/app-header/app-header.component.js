@@ -74,8 +74,8 @@ class AppHeader extends Component {
             onClick={() => history.push(DEFAULT_ROUTE)}
           >
             <img
-              className="app-header__metaElephant"
-              src="/images/MetablockHead.png"
+              className="app-header__metafox"
+              src="/images/metamask-fox.svg"
               height={42}
               width={42}
             />

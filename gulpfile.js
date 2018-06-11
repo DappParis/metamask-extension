@@ -421,11 +421,14 @@ gulp.task('build',
   gulp.series(
     'clean',
     'build:scss',
-    gulpParallel(
-      'build:extension:js',
-      'build:mascara:js',
-      'copy'
-    )
+    'build:extension:js',
+    'build:mascara:js',
+    'copy'
+    // gulpParallel(
+    //   'build:extension:js',
+    //   'build:mascara:js',
+    //   'copy'
+    // )
   )
 )
 

@@ -16,6 +16,7 @@ const BalanceComponent = require('./balance-component')
 const TokenList = require('./token-list')
 const selectors = require('../selectors')
 const { ADD_TOKEN_ROUTE } = require('../routes')
+const EditableLabel = require('./editable-label')
 
 module.exports = compose(
   withRouter,
@@ -51,6 +52,7 @@ function mapDispatchToProps (dispatch) {
       dispatch(actions.showModal({ name: 'ACCOUNT_DETAILS' }))
     },
     showAddTokenPage: () => dispatch(actions.showAddTokenPage()),
+    saveAccountLabel: (address, label) => dispatch(actions.saveAccountLabel(address, label)),
   }
 }
 
@@ -102,10 +104,13 @@ WalletView.prototype.render = function () {
     selectedIdentity,
     keyrings,
     showAccountDetailModal,
+    saveAccountLabel,
     sidebarOpen,
     hideSidebar,
     history,
   } = this.props
+
+  const { name, address } = selectedIdentity
   // temporary logs + fake extra wallets
   // console.log('walletview, selectedAccount:', selectedAccount)
 
@@ -133,24 +138,40 @@ WalletView.prototype.render = function () {
 
       h('div.wallet-view__keyring-label.allcaps', isLoose ? this.context.t('imported') : ''),
 
+      h(Tooltip, {
+        position: 'top',
+        title: this.context.t('viewAccountDetails'),
+        wrapperClassName: 'wallet-view__tooltip',
+      }, [
       h('div.flex-column.flex-center.wallet-view__name-container', {
         style: { margin: '0 auto' },
         onClick: showAccountDetailModal,
       }, [
         h(Identicon, {
-          diameter: 54,
+          diameter: 75,
           address: checksummedAddress,
         }),
-
-        h('span.account-name', {
-          style: {},
-        }, [
-          selectedIdentity.name,
-        ]),
-
-        h('button.btn-clear.wallet-view__details-button.allcaps', this.context.t('details')),
       ]),
     ]),
+    h('div.flex-column.flex-center', {
+      style: { margin: '0 auto' },
+    }, [
+      h(EditableLabel, {
+        className: 'account-modal__name',
+        defaultValue: name,
+        onSubmit: label => saveAccountLabel(address, label),
+      }),
+    ]),
+        // h('span.account-name', {
+        //   style: {},
+        // }, [
+        //   selectedIdentity.name,
+        // ]),
+
+      /*  h('button.btn-clear.wallet-view__details-button.allcaps', this.context.t('details')),*/
+      
+    
+  ]),
 
     h(Tooltip, {
       position: 'bottom',
@@ -182,12 +203,18 @@ WalletView.prototype.render = function () {
 
     h(TokenList),
 
-    h('button.btn-primary.wallet-view__add-token-button', {
-      onClick: () => {
-        history.push(ADD_TOKEN_ROUTE)
-        sidebarOpen && hideSidebar()
-      },
-    }, this.context.t('addToken')),
+    h(Tooltip, {
+      position: 'top',
+      title: this.context.t('addNewErc20Token'),
+      wrapperClassName: 'wallet-view__tooltip',
+    }, [    
+      h('button.wallet-view__add-token-button.j52.j169.j175.j176.j219', {
+        onClick: () => {
+          history.push(ADD_TOKEN_ROUTE)
+          sidebarOpen && hideSidebar()
+        },
+      }, this.context.t('addToken')),
+    ])
   ])
 }
 
@@ -199,4 +226,4 @@ WalletView.prototype.render = function () {
 //         style: {},
 //       }),
 //     ]),
-// ])
+// ]).

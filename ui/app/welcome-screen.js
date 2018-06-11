@@ -1,6 +1,6 @@
 import EventEmitter from 'events'
 import h from 'react-hyperscript'
-import React, { Component } from 'react'
+import { Component } from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import { withRouter } from 'react-router-dom'
@@ -35,29 +35,21 @@ class WelcomeScreen extends Component {
   }
 
   render () {
-    // var logo = document.createElement("img");
-    // logo.setAttribute("src", "./img/Metablock Portrait.png");
-
     return h('div.welcome-screen', [
 
         h('div.welcome-screen__info', [
 
-          // logo,
+          h(Mascot, {
+            animationEventEmitter: this.animationEventEmitter,
+            width: '225',
+            height: '225',
+          }),
 
+          h('div.welcome-screen__info__header', 'Welcome to MetaMask Aniket'),
 
-          <img
-            className="app-header__metaElephant"
-            src="/images/Metablock Portrait.png"
-            height={300}
-            width={300}
-          />,
+          h('div.welcome-screen__info__copy', 'MetaMask is a secure identity vault for Ethereum.'),
 
-
-          h('div.welcome-screen__info__headerr', 'Welcome aboard with Metablock !'),
-
-          h('div.welcome-screen__info__copy', 'Metablock is a secure identity bridge for Ethereum.'),
-
-          h('div.welcome-screen__info__copy', `It allows you to hold ether & tokens (ERC20 & others),
+          h('div.welcome-screen__info__copy', `It allows you to hold ether & tokens,
             and serves as your bridge to decentralized applications.`),
 
           h('button.welcome-screen__button', {

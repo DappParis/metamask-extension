@@ -74,13 +74,13 @@ class UnlockPage extends Component {
 
   renderSubmitButton () {
     const style = {
-      backgroundColor: 'rgba(151, 164, 165, 1)',
-      color: 'black',
+      backgroundColor: '#f7861c',
+      color: 'white',
       marginTop: '20px',
       height: '60px',
       fontWeight: '400',
-      boxShadow: '3px 3px 12px #999',
-      borderRadius: '45px',
+      boxShadow: 'none',
+      borderRadius: '4px',
     }
 
     return (
@@ -106,17 +106,14 @@ class UnlockPage extends Component {
       <div className="unlock-page__container">
         <div className="unlock-page">
           <div className="unlock-page__mascot-container">
-
-            <img
-              className="app-header__metaElephant"
-              src="/images/Metablock Portrait.png"
-              height="200"
-              width="200"
+            <Mascot
+              animationEventEmitter={this.animationEventEmitter}
+              width="120"
+              height="120"
             />
-
           </div>
           <h1 className="unlock-page__title">
-            { this.context.t('welcomeBack') }
+            { this.context.t('welcomeAniket') }
           </h1>
           <div>{ this.context.t('unlockMessage') }</div>
           <form
@@ -150,7 +147,19 @@ class UnlockPage extends Component {
             >
               { this.context.t('restoreFromSeed') }
             </div>
+            <div
+              className="unlock-page__link unlock-page__link--import"
+              onClick={() => {
+                this.props.markPasswordForgotten()
+                this.props.history.push(RESTORE_VAULT_ROUTE)
 
+                if (getEnvironmentType(window.location.href) === ENVIRONMENT_TYPE_POPUP) {
+                  global.platform.openExtensionInBrowser()
+                }
+              }}
+            >
+              { this.context.t('importUsingSeed') }
+            </div>
           </div>
         </div>
       </div>

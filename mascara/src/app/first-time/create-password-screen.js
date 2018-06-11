@@ -121,7 +121,7 @@ class CreatePasswordScreen extends Component {
               height="225"
             />
             <div className="info">
-              Metablock is a secure identity vault for Ethereum.
+              MetaMask is a secure identity vault for Ethereum.
             </div>
             <div className="info">
               It allows you to hold ether & tokens, and interact with decentralized applications.
@@ -129,7 +129,7 @@ class CreatePasswordScreen extends Component {
           </div>}
           <div className="create-password">
             <div className="create-password__title">
-              Set your password for Metablock !
+              Create Password
             </div>
             <TextField
               id="create-password"
