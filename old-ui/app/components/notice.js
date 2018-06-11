@@ -74,7 +74,7 @@ Notice.prototype.render = function () {
         }
 
         .markdown a {
-          color: #df6b0e;
+          color: #3406a0;
         }
 
       `),
@@ -110,6 +110,11 @@ Notice.prototype.render = function () {
         },
         style: {
           marginTop: '18px',
+          backgroundColor: '#3406a0',
+          opacity:'0.5',
+          boxShadow: '2px 2px 3px 2px rgba(0, 0, 255, .2)',
+          cursor: 'not-allowed',
+          pointerEvents:'none',
         },
       }, 'Accept'),
     ])
