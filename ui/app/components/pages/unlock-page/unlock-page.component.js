@@ -74,7 +74,7 @@ class UnlockPage extends Component {
 
   renderSubmitButton () {
     const style = {
-      backgroundColor: 'rgba(151, 164, 165, 1)',
+      backgroundColor: 'rgb(0, 137, 179)',
       color: 'black',
       marginTop: '20px',
       height: '60px',
@@ -116,7 +116,7 @@ class UnlockPage extends Component {
 
           </div>
           <h1 className="unlock-page__title">
-            { this.context.t('welcomeAniket') }
+            { this.context.t('welcomeBack') }
           </h1>
           <div>{ this.context.t('unlockMessage') }</div>
           <form

@@ -48,8 +48,8 @@ class WelcomeScreen extends Component {
           <img
             className="app-header__metaElephant"
             src="/images/Metablock Portrait.png"
-            height={300}
-            width={300}
+            height={350}
+            width={350}
           />,
 
 
