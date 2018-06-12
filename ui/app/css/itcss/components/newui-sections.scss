@@ -6,7 +6,7 @@ $sub-mid-size-breakpoint-range: "screen and (min-width: #{$break-large}) and (ma
  */
 
 // Component Colors
-$tx-view-bg: $white;
+$tx-view-bg: #e2f8ff;
 $wallet-view-bg: $alabaster;
 
 // Main container
@@ -61,7 +61,7 @@ $wallet-view-bg: $alabaster;
   flex-direction: column;
   flex: 32 1 32%;
   width: 0;
-  background: $wallet-view-bg;
+  background: #c3dde0;
   z-index: 200;
   position: relative;
 

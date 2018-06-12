@@ -1886,7 +1886,7 @@ h2.page-subtitle {
   -webkit-box-flex: 63.5;
       -ms-flex: 63.5 0 66.5%;
           flex: 63.5 0 66.5%;
-  background: #d6f5ff; }
+  background: #e2f8ff; }
   @media screen and (max-width: 575px) {
     .tx-view .identicon-wrapper {
       display: none; }
@@ -1905,7 +1905,7 @@ h2.page-subtitle {
       -ms-flex: 33.5 1 33.5%;
           flex: 33.5 1 33.5%;
   width: 0;
-  background: #f6f6f6;
+  background: #c3dde0;
   z-index: 200;
   position: relative; }
   @media screen and (min-width: 576px) {
