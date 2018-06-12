@@ -20,7 +20,7 @@
 .alpha-warning__container {
   display: flex;
   justify-content: center;
-  background: white;
+  background: #f7861c;
   flex: 0 0 auto;
 }
 
@@ -104,6 +104,7 @@
   flex-flow: column nowrap;
   margin: 60px 0 30px 0;
   position: relative;
+  margin-left: 25%;
 }
 
 .import-account {
@@ -686,7 +687,7 @@ button.backup-phrase__confirm-seed-option:hover {
   height: 54px;
   width: 198px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.14);
-  color: black;
+  color: #FFFFFF;
   font-size: 20px;
   font-weight: 500;
   font-family: Roboto;
@@ -700,12 +701,12 @@ button.backup-phrase__confirm-seed-option:hover {
 
 button.first-time-flow__button[disabled] {
   opacity: .6;
+  margin-left: 35%;
 }
 
 button.first-time-flow__button:hover {
   transform: scale(1);
-  background-color: white;
-  color: #0089b3
+  background-color: #87b3b7;
 }
 
 .first-time-flow__button--tertiary {
@@ -729,11 +730,13 @@ button.first-time-flow__button--tertiary:hover {
   color: #1B344D;
   font-size: 18px;
   line-height: 23px;
+  margin-left: 35%;
 }
 
 .breadcrumbs {
   display: flex;
   flex-flow: row nowrap;
+  margin-left: 47%;
 }
 
 .breadcrumb {
