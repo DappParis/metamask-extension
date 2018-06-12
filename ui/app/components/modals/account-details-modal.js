@@ -54,11 +54,11 @@ AccountDetailsModal.prototype.render = function () {
   const { name, address } = selectedIdentity
 
   return h(AccountModalContainer, {}, [
-      h(EditableLabel, {
-        className: 'account-modal__name',
-        defaultValue: name,
-        onSubmit: label => saveAccountLabel(address, label),
-      }),
+      // h(EditableLabel, {
+      //   className: 'account-modal__name',
+      //   defaultValue: name,
+      //   onSubmit: label => saveAccountLabel(address, label),
+      // }),
 
       h(QrView, {
         Qr: {
@@ -68,12 +68,12 @@ AccountDetailsModal.prototype.render = function () {
 
       h('div.account-modal-divider'),
 
-      h('button.btn-primary.account-modal__button', {
+      h('button.j169.j175.j176.account-btn', {
         onClick: () => global.platform.openWindow({ url: genAccountLink(address, network) }),
       }, this.context.t('etherscanView')),
 
       // Holding on redesign for Export Private Key functionality
-      h('button.btn-primary.account-modal__button', {
+      h('button.j169.j175.j176.account-btn', {
         onClick: () => showExportPrivateKeyModal(),
       }, this.context.t('exportPrivateKey')),
 

@@ -11,25 +11,26 @@
   padding: 7px 3px;
   flex: 0 0 auto;
   display: flex;
-
+}
   &.ethereum-network .menu-icon-circle div {
-    background-color: rgba(3, 135, 137, .7) !important;
+    background-color: rgba(3, 135, 137, .85) !important;
   }
 
   &.ropsten-test-network .menu-icon-circle div {
-    background-color: rgba(233, 21, 80, .7) !important;
+    background-color: rgba(233, 21, 80, .85) !important;
   }
 
   &.kovan-test-network .menu-icon-circle div {
-    background-color: rgba(105, 4, 150, .7) !important;
+    background-color: rgba(105, 4, 150, .85) !important;
   }
 
   &.rinkeby-test-network .menu-icon-circle div {
-    background-color: rgba(235, 179, 63, .7) !important;
+    background-color: rgba(235, 179, 63, .85) !important;
   }
 }
 
 .dropdown-menu-item {
+  color: #797979 !important;
   .menu-icon-circle,
   .menu-icon-circle--active {
     margin: 0 14px;
@@ -58,7 +59,8 @@
 }
 
 .network-droppo {
-  right: 2px;
+  top: 51px;
+  width: 252px !important;
 
   @media screen and (min-width: 576px) {
     right: calc(((100% - 85vw) / 2) + 2px);
@@ -66,6 +68,9 @@
 
   @media screen and (min-width: 769px) {
     right: calc(((100% - 80vw) / 2) + 2px);
+    position: fixed;
+    top: 54px !important;
+    margin-right: 53px;
   }
 
   @media screen and (min-width: 1281px) {
@@ -138,7 +143,7 @@
 .network-dropdown-title {
   height: 25px;
   width: 120px;
-  color: $white;
+  color: #333;
   font-family: Roboto;
   font-size: 18px;
   line-height: 25px;
@@ -148,14 +153,15 @@
 .network-dropdown-content {
   height: 36px;
   width: 265px;
-  color: $dusty-gray;
+  text-align: center;
+  color: #3a3a3a;
   font-family: Roboto;
   font-size: 14px;
   line-height: 18px;
 }
 
 .network-caret {
-  margin: 0 8px 2px;
+  margin: 0 23px 2px;
 }
 
 .network-display {

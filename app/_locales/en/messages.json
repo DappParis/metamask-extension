@@ -146,6 +146,12 @@
   "copyToClipboard": {
     "message": "Copy to clipboard"
   },
+  "addNewErc20Token": {
+    "message": "Add New ERC20 Token"
+  },
+  "viewAccountDetails":{
+    "message": "View Account Details"
+  },
   "copyButton": {
     "message": " Copy "
   },
@@ -363,6 +369,9 @@
   },
   "hideToken": {
     "message": "Hide Token"
+  },
+  "sendToken": {
+    "message": "Send Token"
   },
   "hideTokenPrompt": {
     "message": "Hide Token?"
@@ -932,6 +941,9 @@
   },
   "welcomeBack": {
     "message": "Ready To dApps' It?"
+  },
+  "welcomeAniket": {
+    "message": "Welcome Back, Mr. Aniket!"
   },
   "welcomeBeta": {
     "message": "Welcome to Metablock Beta"

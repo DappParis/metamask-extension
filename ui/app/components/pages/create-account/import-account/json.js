@@ -51,13 +51,13 @@ class JsonImportSubview extends Component {
 
         h('div.new-account-create-form__buttons', {}, [
 
-          h('button.btn-secondary.new-account-create-form__button', {
+          h('button.j169.j176', {
             onClick: () => this.props.history.push(DEFAULT_ROUTE),
           }, [
             this.context.t('cancel'),
           ]),
 
-          h('button.btn-primary.new-account-create-form__button', {
+          h('button.j169.j175', {
             onClick: () => this.createNewKeychain(),
           }, [
             this.context.t('import'),

@@ -116,7 +116,7 @@ class UnlockPage extends Component {
 
           </div>
           <h1 className="unlock-page__title">
-            { this.context.t('welcomeBack') }
+            { this.context.t('welcomeAniket') }
           </h1>
           <div>{ this.context.t('unlockMessage') }</div>
           <form
