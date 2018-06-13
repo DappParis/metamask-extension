@@ -1,7 +1,7 @@
 {
   "name": "Metablock",
   "short_name": "Metablock",
-  "version": "1.0.0",
+  "version": "1.0",
   "manifest_version": 2,
   "author": "https://dapp.paris",
   "description": "Dapp.paris add-on",

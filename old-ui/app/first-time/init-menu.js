@@ -47,6 +47,13 @@ InitializeMenuScreen.prototype.renderMenu = function (state) {
       h(Mascot, {
         animationEventEmitter: this.animationEventEmitter,
       }),
+      // <img
+      //   className="app-header__metaElephant"
+      //   src="/images/Metablock Portrait.png"
+      //   height={350}
+      //   width={350}
+      // />,
+
 
       h('h1', {
         style: {
@@ -68,7 +75,7 @@ InitializeMenuScreen.prototype.renderMenu = function (state) {
         }, 'Encrypt your new DEN'),
 
         h(Tooltip, {
-          title: 'Your DEN is your password-encrypted storage within MetaMask.',
+          title: 'Your DEN is your password-encrypted storage within Metablock.',
         }, [
           h('i.fa.fa-question-circle.pointer', {
             style: {
