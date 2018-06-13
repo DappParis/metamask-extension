@@ -7,6 +7,8 @@
   flex-flow: column nowrap;
   width: 100%;
   flex: 0 0 auto;
+  background-color: #16448e;
+  color: wheat;
 
   @media screen and (max-width: 575px) {
     padding: 12px;
@@ -96,7 +98,7 @@
   font-size: 1.1rem;
   position: relative;
   padding-left: 15px;
-  color: #5b5d67;
+  color: wheat;
 
   @media screen and (max-width: 575px) {
     display: none;
