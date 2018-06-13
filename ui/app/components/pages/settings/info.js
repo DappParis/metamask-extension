@@ -14,7 +14,7 @@ class Info extends Component {
   renderLogo () {
     return (
       h('div.settings__info-logo-wrapper', [
-        h('img.settings__info-logo', { src: 'images/info-logo.png' }),
+        h('img.settings__info-logo', { src: 'images/infoHead.png' }),
       ])
     )
   }
@@ -58,7 +58,7 @@ class Info extends Component {
         ]),
         h('div.settings__info-link-item', [
           h('a', {
-            href: 'https://metamask.io/',
+            href: 'https://dapp.paris/',
             target: '_blank',
           }, [
             h('span.settings__info-link', this.context.t('visitWebSite')),
@@ -83,7 +83,7 @@ class Info extends Component {
           h('div.settings__content-item.settings__content-item--without-height', [
             this.renderLogo(),
             h('div.settings__info-item', [
-              h('div.settings__info-version-header', 'MetaMask Version'),
+              h('div.settings__info-version-header', 'Metablock Version'),
               h('div.settings__info-version-number', this.state.version),
             ]),
             h('div.settings__info-item', [
