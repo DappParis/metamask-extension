@@ -8,7 +8,7 @@
   width: 100%;
   flex: 1 0 auto;
   padding: 70px 0;
-  background: $white;
+  background: #e2f8ff;
 
   @media screen and (max-width: 575px) {
     padding: 0;
@@ -55,5 +55,5 @@
     text-transform: uppercase;
     margin: 35px 0 14px;
     transition: 200ms ease-in-out;
-    background-color:  #0089b3; }
+    background-color:  #0089b3;}
   }
