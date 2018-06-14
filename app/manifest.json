@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "manifest_version": 2,
   "author": "https://dapp.paris",
-  "description": "Dapp.paris add-on",
+  "description": "Dapp.paris add-on to provide your own Ethereum access without technical or specifical knowledge ! Exchanges, dApp development, checkout... Everything is possible with Metablock!",
   "commands": {
     "_execute_browser_action": {
       "suggested_key": {

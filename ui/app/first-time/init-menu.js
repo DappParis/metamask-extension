@@ -68,7 +68,7 @@ class InitializeMenuScreen extends Component {
               style: {
                 fontSize: '18px',
                 position: 'relative',
-                color: 'rgb(247, 134, 28)',
+                color: '',
                 top: '2px',
                 marginLeft: '4px',
               },
